@@ -3,6 +3,9 @@ require('dotenv').config();
 
 const sendMail = (from, to, subject, content, htmlContent) => {
     let mailSender = nodemailer.createTransport({
+        // port : 465,
+        // host : "mail.rubynav.com",
+        // secure : true,
         service : 'gmail',
         auth : {
             user : 'eduvieouu@gmail.com',
