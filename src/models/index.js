@@ -1,11 +1,10 @@
 const Sequelize = require('sequelize');
-// const { sequelize } = require('../config/config');
+const { sequelize } = require('../config/config');
 const logger = require('../config/logger');
 
-// const sequelizeInstance = new Sequelize(sequelize.url);
-const sequelizeInstance = new Sequelize(process.env.JAWSDB_URL);
-const db = {};
+const sequelizeInstance = new Sequelize(sequelize.url);
 
+const db = {};
 // const sequelizeInstance = new Sequelize(sequelize.database, sequelize.user, sequelize.password, {
 //   host: sequelize.host,
 //   dialect: sequelize.dialect,

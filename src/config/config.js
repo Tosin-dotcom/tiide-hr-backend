@@ -36,7 +36,7 @@ module.exports = {
   env: envVars.NODE_ENV,
   port: envVars.PORT,
   sequelize: {
-    url: envVars.DB_URL + (envVars.NODE_ENV === 'test' ? '-test' : ''),
+    url: envVars.JAWSDB_URL + (envVars.NODE_ENV === 'test' ? '-test' : ''),
     host: envVars.DB_HOST,
     database: envVars.DB_NAME,
     user: envVars.DB_USER,
